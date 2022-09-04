@@ -73,7 +73,7 @@ spec:
         - name: WRITABLE_PATH
           value: "/data"
         - name: MONGO_URL
-          value: "mongodb://wekan:wekan@mongod-0.mongodb-service,mongod-1.mongodb-service,mongod-2.mongodb-servicemongodb/wekan?authSource=wekan&replicaSet=MainRepSet"
+          value: "mongodb://wekan:wekan@mongod-0.mongodb-service,mongod-1.mongodb-service,mongod-2.mongodb-service/wekan?authSource=wekan&replicaSet=MainRepSet"
         - name: ROOT_URL
           value: "http://wekan.kube.vn:32080"
         - name: CORS
