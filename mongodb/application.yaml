@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/schnell18/gitops.git
+    repoURL: https://github.com/schnell18/play-gitops.git
     targetRevision: HEAD
     path: mongodb
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: kanban
 
   syncPolicy:
     syncOptions:

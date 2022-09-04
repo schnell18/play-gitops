@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mongodb-argo-application
+  name: titra-argo-application
   namespace: argocd
 spec:
   project: default
   source:
-    repoURL: https://github.com/schnell18/gitops.git
+    repoURL: https://github.com/schnell18/play-gitops.git
     targetRevision: HEAD
     path: titra
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: kanban
 
   syncPolicy:
     syncOptions:
